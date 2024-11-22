@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(130, 255, 197);
+}
+h2{
+    color: rgba(255, 255, 255, 0.212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test{
+    background-color: rgb(62, 175, 40);
+    border-color: rgb(54, 153, 35);
+    border-radius: 50px 5px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+h1{
+    color: rgba(0, 0, 0, 0.212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#lightning{
+    border-radius: 5px 15px;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.39);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.315);
+    font-size: larger;
+    font-weight: 750;
+    display: none;
+}
+
+.test2{
+    background-color: black;
+    border-radius: 25px 100px;
+    padding: 50px;
+    height: fit-content;
+    width: fit-content;
+}
+#glowing{
+    background-color: cyan;
+    color: rgba(0, 0, 151, 0.685);
+    font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: larger;
+    border-radius: 25px 50px;
+    box-shadow: 0 0 10px rgb(105, 255, 255), 0 0 20px rgb(105, 255, 255);
+}
+#glowing:hover{
+    box-shadow: 0 0 10px rgb(105, 255, 255), 0 0 20px rgb(105, 255, 255), 0 0 50px rgb(105, 255, 255), 0 0 100px rgb(105, 255, 255),  0 0 200px rgb(105, 255, 255),  0 0 400px rgb(105, 255, 255);
+}

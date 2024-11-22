@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>acceuil</title>
+        <style>
+            body{
+                background-color: rgb(118, 209, 0);
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+                justify-content: flex-start;
+                display: flex;
+            }
+            h1{
+                color: rgb(151, 71, 6);
+                font-family: cursive;
+            }
+            .bienvenue{
+                background-color: rgba(0, 255, 255, 0.61);
+                width: fit-content;
+                height: fit-content;
+            }
+            p{
+                color: rgba(0, 0, 0, 0.493);
+                font-family: fantasy;
+            }
+            a{
+                color: rgb(0, 0, 0, 0.493);
+                font-style: inherit;
+                font-weight: 300;
+            }
+            #parties{
+                color: rgba(165, 42, 42, 0.788);
+                font-family: cursive;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+            .div_parties{
+                background-color: rgba(255, 38, 0, 0.61);
+                width: 550px;
+                height: fit-content;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                display: flex;
+            }
+            #sous_parties{
+                color: rgba(42, 91, 165, 0.699);
+                font-family: Courier;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+            button{
+                background-color: rgba(255, 255, 255, 0);
+                color: rgb(59, 91, 179);
+                border: none;
+                font-size: larger;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .test{
+                background-color: rgb(63, 0, 82);
+                width: fit-content;
+                height: fit-content;
+            }
+            .coté{
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content: center;
+                justify-content: flex-start;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+
+            //partie 2
+            function show_chap1p2(){
+                document.getElementById('chap1p2').style.display = 'block';
+                document.getElementById('shower1p2').style.display = 'none';
+                document.getElementById('cacheur1p2').style.display = 'block';
+            }
+            function cach_chap1p2(){
+                document.getElementById('chap1p2').style.display = 'none';
+                document.getElementById('cacheur1p2').style.display = 'none';
+                document.getElementById('shower1p2').style.display = 'block';
+            }
+            function show_chap2p2(){
+                document.getElementById('chap2p2').style.display = 'block';
+                document.getElementById('shower2p2').style.display = 'none';
+                document.getElementById('cacheur2p2').style.display = 'block';
+            }
+            function cach_chap2p2(){
+                document.getElementById('chap2p2').style.display = 'none';
+                document.getElementById('cacheur2p2').style.display = 'none';
+                document.getElementById('shower2p2').style.display = 'block';
+            }
+
+            //partie 3
+            function show_chap1p3(){
+                document.getElementById('chap1p3').style.display = 'block';
+                document.getElementById('shower1p3').style.display = 'none';
+                document.getElementById('cacheur1p3').style.display = 'block';
+            }
+            function cach_chap1p3(){
+                document.getElementById('chap1p3').style.display = 'none';
+                document.getElementById('cacheur1p3').style.display = 'none';
+                document.getElementById('shower1p3').style.display = 'block';
+            }
+        </script>
+        <div class="bienvenue">
+            <h1>
+                bienvenue sur cette page webb
+            </h1>
+            <p>
+                cliquez por la <a href="partie_I.html">partie I</a>
+                <br>
+                ________________
+                <br>
+                scrolez pour la partie II
+                <br>
+                ________________
+                <br>
+                scrolez pour la partie III
+                <br>
+            </p>
+        </div>
+        <div class="coté">
+        
+        <!--partie II-->
+        <div class="div_parties">
+            <h2 id="parties">
+                Partie II
+            </h2>
+
+            <!--chap 1-->
+            <h2 id="sous_parties">
+                chapitre 1
+            </h2>
+            <button type="button" onclick="show_chap1p2()" id="shower1p2">
+                montrer chapitre 1
+            </button>
+            <button type="button" onclick="cach_chap1p2()" id="cacheur1p2" style="display: none">
+                cacher chapitre 1
+            </button>
+
+            <p id="chap1p2" style="display: none;">
+                dans le chapitre 1 de la partie II on vas parler de css
+                <br>
+                <img src="img/pngegg.png" alt="logo CSS" height="75px" width="75px">
+                le CSS c'est quoi ?
+                <br>
+                le css permet de stiliser les pages <strong>html</strong> car sinon les pages 
+                <br>
+                ne resemlereaient pas a ca.
+            </p>
+
+            <!--chap 2-->
+            <h2 id="sous_parties">
+                chapitre 2
+            </h2>
+            <button type="button" onclick="show_chap2p2()" id="shower2p2">
+                montrer chapitre 2
+            </button>
+            <button type="button" onclick="cach_chap2p2()" id="cacheur2p2" style="display: none">
+                cacher chapitre 2
+            </button>
+
+            <p id="chap2p2" style="display: none;">
+                dans le chapitre 2 partie II nous allons parler de où ecrire le CSS
+                <br>
+                le CSS peut s'ecrire a plusieurs endroits 
+                <br>
+                1/ dans le code html :
+                <br>
+                dans la balise head vous pouvez ecrire la balise "style" et ecrire dedan le code CSS
+                <br>
+                2/ dans un autre fichier CSS :
+                <br>
+                si vous ecrivez le CSS dans un autre fichier CSS vous 
+                <br>
+                devrez alors ecrire la balise "link" et mentioner 
+                <br>
+                le fichier dans href="nomdufichier.css"
+            </p>
+        </div>
+
+        <!--partie III-->
+        <div class="div_parties">
+            <h2 id="parties">
+                Partie III
+            </h2>
+
+            <!--chap 1-->
+            <h2 id="sous_parties">
+                chapitre 1
+            </h2>
+            <button type="button" onclick="show_chap1p3()" id="shower1p3">
+                montrer chapitre 1
+            </button>
+            <button type="button" onclick="cach_chap1p3()" id="cacheur1p3" style="display: none">
+                cacher chapitre 1
+            </button>
+            
+            <p id="chap1p3" style="display: none;">
+                dans le chapitre 1 de la partie III on vas parler de javascript
+                <br>
+                <img src="img/javascript.png" alt="logo JAVASCRIPT" height="75px" width="115px">
+
+            </p>
+        </div>
+        </div>
+        <div class="test">
+            
+        </div>
+    </body>
+</html>

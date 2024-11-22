@@ -1,0 +1,48 @@
+body {
+  background-color: rgba(88, 196, 204, 0.77);
+}
+
+.container {
+  border: 8px solid black;
+  min-height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-3 {
+  width: 300px;
+}
+
+#box-1 {
+  width: 115px;
+}
+
+.box {
+  font-family: monospace;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background-color: lightblue;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#logo-1 {
+  height: 125px;
+  width: 90px;
+}
+
+#logo-2 {
+  height: 147px;
+  width: 140px;
+}
